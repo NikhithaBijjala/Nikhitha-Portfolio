@@ -13,7 +13,7 @@ function App() {
   const isProduction = process.env.NODE_ENV === "production";
   const basename = isProduction ? "/Nikhitha-Portfolio" : "/";
   return (
-    <Router basename={basename}> {/* Only one Router here */}
+    <Router> 
       <div>
         <div className="mainNav">
           <nav className="navbar" id="myLinks">
