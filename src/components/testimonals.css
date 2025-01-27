@@ -1,0 +1,117 @@
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+  }
+  
+  .testimonial {
+    z-index: 10;
+    background-color: #132436;
+    border-radius: 1.2em;
+    width: 100%;
+    max-width: 700px;
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+    border: #6472f3;
+    padding: 10px;
+   
+  }
+
+  .heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    height:300px;
+  }
+  .heading h2{
+    margin-bottom: 40px;
+  }
+
+  .subtitle {
+    border: 1px solid #6472f3;
+    color: var(--white);
+    letter-spacing: .13em;
+    text-transform: uppercase;
+    background-color: #5566ff26;
+    border-radius: 50em;
+    margin-bottom: 32px;
+    padding: .7em 1.3em;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.3em;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+}
+  .paragraph-review {
+    color: #ffffffe6;
+    font-size: 14px;
+    font-weight: 25px;
+}
+  
+  .profile-img {
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    
+  }
+  .review-info{
+    padding: 20px;
+  }
+  .block-review-info {
+    grid-row-gap: 0em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 10px;
+}
+.review-name {
+  font-size: 20px;
+  font-weight: 500;
+}
+.review-subtitle {
+  letter-spacing: .025em;
+  font-size: .87em;
+  line-height: 1.2em;
+}
+  
+  .carousel-btn {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+  }
+  
+  .carousel-btn:hover {
+    color: white;
+  }
+  
+  .quotes {
+    font-size: 36px;
+    color: black;
+  }
+  .text-blk{
+    color: black;
+  }
+  .text-blk-center{
+    color:rgb(214, 72, 72);;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .skills{
+    display: flex;
+    flex:1;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 20px;
+    color:#0077b3
+  }

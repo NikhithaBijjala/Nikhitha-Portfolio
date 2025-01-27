@@ -1,0 +1,73 @@
+.skills-scroll {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  animation: scroll-left 20s linear infinite;
+  margin: 30px;
+}
+
+.icon {
+  height: 60px;
+  width: 60px;
+  padding: 10px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.icon2 {
+  height: 60px;
+  display: flex;
+  width: 60px;
+  padding: 10px;
+  transition: filter 0.3s ease;
+}
+
+.icon:hover {
+  filter: grayscale(0%);
+}
+
+.skillsDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skillsDiv2 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 10px;
+  flex-wrap: wrap;
+}
+
+.skillsDiv2 p {
+  color: white;
+  text-decoration: none;
+}
+
+.skillsDiv:hover {
+  filter: grayscale(0%);
+  color: white;
+}
+
+.skillsDiv p:hover {
+  color: white;
+
+}
+
+.skillsDiv p {
+  text-decoration: none;
+  color: rgb(77, 76, 76);
+
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100vw);
+    /* Use viewport width to move */
+  }
+}
