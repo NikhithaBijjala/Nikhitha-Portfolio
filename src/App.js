@@ -5,12 +5,15 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Experience from "./components/Experience";
 import About from "./components/About";
-import Testimonials from "./components/Testimonials";
+
 import Profile from "./img/Nikhitha.jpg";
+import Testimonials from "./components/Testimonals";
 
 function App() {
+  const isProduction = process.env.NODE_ENV === "production";
+  const basename = isProduction ? "/Nikhitha-Portfolio" : "/";
   return (
-    <Router basename="/Nikhitha-Portfolio"> 
+    <Router basename={basename}> {/* Only one Router here */}
       <div>
         <div className="mainNav">
           <nav className="navbar" id="myLinks">
