@@ -2,7 +2,8 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nikhithabijjala.github.io/Nikhitha-Portfolio/",
+  "homepage": "https://NikhithaBijjala.github.io/Nikhitha-Portfolio/",
+
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
