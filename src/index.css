@@ -27,6 +27,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 10px;
+  /* margin-top: 40px; */
 }
 
 .contactb {
@@ -45,16 +46,16 @@ body {
   align-items: center;
   flex-direction: column;
   border-radius: 20px;
-  border: 5px solid #68b2ff;;
-  padding: 40px;
+  border: 3px solid #68b2ff;;
+  padding: 10px;
   margin-top: 40px;
   margin: 20px;
   width: 400px;
-  height: 500px;
+  height: 400px;
 }
 
 .card:hover {
-  box-shadow: 1px 1px 15px #68b2ff;;
+  box-shadow: 1px 1px 5px #68b2ff;;
 }
 
 .pro-button {
@@ -66,15 +67,16 @@ body {
   width: 170px;
   background-color: #68b2ff;;
   font-size: small;
-  box-shadow: 1px 1px 8px #68b2ff;;
+  box-shadow: 1px 1px 1px #68b2ff;;
   color: #000;
   padding: 10px;
   text-align: center;
   text-decoration: none;
   font-size: large;
   margin: 15px;
-  margin-top: 35px;
+  margin-bottom: 10px;
 }
+
 
 .navbar {
   border: 1px solid var(--dark-blue-3);
@@ -167,13 +169,13 @@ body {
 
 
 .card p {
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .card h3 {
   padding: 15px;
   color: #68b2ff;;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 
@@ -197,7 +199,7 @@ body {
 }
 
 .btn-box:hover {
-  box-shadow: 0 0 10px #68b2ff;;
+  box-shadow: 0 0 5px #68b2ff;;
 }
 
 .img {
@@ -221,7 +223,7 @@ body {
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 100%;
+  height: 90%;
   justify-content: center;
   align-items: center;
   background-color: #151c23;
@@ -229,9 +231,8 @@ body {
 
 .about-img {
   display: flex;
-  width: 35%;
-  padding: 50px;
-  /* margin-top: 30px; */
+  width: 300px;
+  padding: 40px;
 }
 
 .abt-res {
@@ -245,7 +246,6 @@ body {
 
 .contact {
   display: flex;
-  /* flex-direction: row; */
   justify-content: space-between;
 }
 
@@ -263,8 +263,13 @@ body {
   flex-direction: column;
 }
 
+.skillsscroll{
+  width: 100%;
+  align-items: center;
+}
+
 .about-text h2 {
-  font-size: 60px;
+  font-size: 50px;
   letter-spacing: 5px;
   padding-bottom: 10px;
 }
@@ -275,7 +280,7 @@ body {
 
 .about-text p {
 
-  font-size: 20px;
+  font-size: 15px;
   line-height: 2;
   letter-spacing: 2px;
   padding-right: 20px;

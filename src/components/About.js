@@ -61,7 +61,7 @@ function About() {
         </div>
         <div >
           {!open ? (
-            <div >
+            <div className="skillsscroll">
               <TechnicalSkills />
             </div>
           ) : (
@@ -70,7 +70,7 @@ function About() {
         </div>
         <div className="skills" onClick={() => setOpen(!open)}>
           <FaAngleDown />
-          <p>{!open ? "View My TechnicalSkills" : "Close Expanded View"}</p>
+          <p>{!open ? "View All My Skills" : "Close Expanded View"}</p>
         </div>
         <div className="aboutskills">{open ? <ExpandedSkills /> : ""}</div>
 

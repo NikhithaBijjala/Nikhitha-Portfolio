@@ -2,7 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import "./technicalskilss.css";
 
-
 const TechnicalSkills = () => {
   const skills = [
     { name: "Python", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
@@ -10,8 +9,8 @@ const TechnicalSkills = () => {
     { name: "JavaScript", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
     { name: "TypeScript", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
     { name: "AWS", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" },
-    { name: "Docker",img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
-    { name: "CI/CD",img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
+    { name: "Docker", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
+    { name: "CI/CD", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
     { name: "HTML", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
     { name: "CSS", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
     { name: "Angular", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" },
@@ -31,37 +30,32 @@ const TechnicalSkills = () => {
   ];
 
   return (
-    <div>
-      <motion.div className="overflow-x-auto py-4 skills-scroll"
-        initial="hidden"
-        animate="visible"
-      >
+    <div className="skills-scroll">
+      <div className="skills-scroll-inner">
         {skills.map((skill, index) => (
-          <motion.a
+          <motion.div
             key={index}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block flex items-center justify-center"
+            className="skillsDiv"
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9 }}
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.3, ease: "easeInOut" }}
           >
-            <div className="skillsDiv">
-            <img
-              src={skill.img}
-              alt={skill.name}
-              title={skill.name}
-              className="icon"
-            />
+            <img src={skill.img} alt={skill.name} title={skill.name} className="icon" />
             <p>{skill.name}</p>
-            </div>
-            
-          </motion.a>
+          </motion.div>
         ))}
-      </motion.div>
-     
+        {/* Empty div to create infinite visual loop */}
+        {skills.map((skill, index) => (
+          <motion.div
+            key={`copy-${index}`}
+            className="skillsDiv"
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <img src={skill.img} alt={skill.name} title={skill.name} className="icon" />
+            <p>{skill.name}</p>
+          </motion.div>
+        ))}
+      </div>
     </div>
   );
 };

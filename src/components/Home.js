@@ -18,7 +18,7 @@ function Home() {
 
           <div className="home-sci">
             <a
-              href="https://www.linkedin.com/in/nikhitha-bijjala-54874618b/"
+              href="https://www.linkedin.com/in/nikhithabijjala/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -27,7 +27,7 @@ function Home() {
               </span>
             </a>
             <a
-              href="https://github.com/NIkhitha07"
+              href="https://github.com/NikhithaBijjala"
               target="_blank"
               rel="noopener noreferrer"
             >

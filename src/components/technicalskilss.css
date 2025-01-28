@@ -1,9 +1,30 @@
 .skills-scroll {
   display: flex;
-  flex-wrap: nowrap;
+  align-items: center;
   overflow: hidden;
-  animation: scroll-left 20s linear infinite;
-  margin: 30px;
+  position: relative;
+  white-space: nowrap;
+  margin:10px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: 20px;
+}
+
+.skills-scroll-inner {
+  display: inline-flex;
+  animation: scroll 34s linear infinite;
+}
+
+.skillsDiv {
+  display: inline-block;
+  margin-right: 20px;
+  text-align: center;
+
+}
+.skillsDiv2{
+  display: flex;
+  margin: 10px;
+  align-items: center;
 }
 
 .icon {
@@ -26,48 +47,12 @@
   filter: grayscale(0%);
 }
 
-.skillsDiv {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.skillsDiv2 {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  margin: 10px;
-  flex-wrap: wrap;
-}
-
-.skillsDiv2 p {
-  color: white;
-  text-decoration: none;
-}
-
-.skillsDiv:hover {
-  filter: grayscale(0%);
-  color: white;
-}
-
-.skillsDiv p:hover {
-  color: white;
-
-}
-
-.skillsDiv p {
-  text-decoration: none;
-  color: rgb(77, 76, 76);
-
-}
-
-@keyframes scroll-left {
+/* Keyframes for smooth, infinite scroll */
+@keyframes scroll {
   0% {
     transform: translateX(0);
   }
-
   100% {
-    transform: translateX(-100vw);
-    /* Use viewport width to move */
+    transform: translateX(-100%);
   }
 }
